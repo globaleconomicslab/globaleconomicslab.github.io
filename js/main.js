@@ -1,4 +1,42 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Mobile nav: hamburger button collapses the header's link list into a
+  // dropdown panel on small screens (site-wide — every page shares the
+  // same header markup). Desktop is untouched; the CSS only turns this
+  // into a dropdown below the 760px breakpoint.
+  var navToggle = document.querySelector('.nav-toggle');
+  var siteNav = document.getElementById('site-nav');
+  if (navToggle && siteNav) {
+    function setNavOpen(open) {
+      siteNav.classList.toggle('is-open', open);
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    navToggle.addEventListener('click', function () {
+      setNavOpen(!siteNav.classList.contains('is-open'));
+    });
+    // Tapping a link should navigate AND close the dropdown behind it
+    // (mostly matters for same-page anchors like Home when already on
+    // the homepage, where there's no navigation to naturally reset it).
+    siteNav.querySelectorAll('.tab-link').forEach(function (link) {
+      link.addEventListener('click', function () { setNavOpen(false); });
+    });
+    // Outside click / Escape also close it.
+    document.addEventListener('click', function (e) {
+      if (siteNav.classList.contains('is-open') && !siteNav.contains(e.target) && e.target !== navToggle) {
+        setNavOpen(false);
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && siteNav.classList.contains('is-open')) setNavOpen(false);
+    });
+    // If the window is resized back up past the mobile breakpoint while
+    // the dropdown is open, reset it so it doesn't linger open (now
+    // invisible, since the desktop CSS hides the .is-open state) if the
+    // page is later resized back down.
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 760) setNavOpen(false);
+    });
+  }
+
   // News filter buttons (News page only)
   var filterButtons = document.querySelectorAll('.filter-row button');
   var items = document.querySelectorAll('[data-category]');
@@ -343,7 +381,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var mailIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px; margin-right:5px;"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>';
     var lastFocused = null;
 
-    function openBio(id) {
+    // Opening a bio also updates the URL to a shareable direct link
+    // (about.html#rogoff, etc.) so a specific person's popup can be linked
+    // to directly rather than just the team page — matching the pattern
+    // used on sites like Renaissance Philanthropy's team page. updateUrl
+    // is false when we're opening in *response* to a hash that's already
+    // in the address bar (initial page load, or the hashchange/popstate
+    // handlers below), so we don't push a redundant duplicate history entry.
+    function openBio(id, updateUrl) {
       var person = bios[id];
       if (!person) return;
       modalName.textContent = person.name;
@@ -366,11 +411,22 @@ document.addEventListener('DOMContentLoaded', function () {
       lastFocused = document.activeElement;
       bioModal.hidden = false;
       bioModal.querySelector('.bio-modal-close').focus();
+      if (updateUrl !== false && window.location.hash.replace('#', '') !== id) {
+        history.pushState({ bio: id }, '', '#' + id);
+      }
     }
 
-    function closeBio() {
+    function closeBio(updateUrl) {
       bioModal.hidden = true;
       if (lastFocused) lastFocused.focus();
+      // Clear the person hash back to a clean team-tab URL, unless we're
+      // closing *because* the URL already changed out from under us (the
+      // popstate handler below — in that case the address bar is already
+      // where it should be, so touching it again would fight the browser's
+      // own back/forward navigation).
+      if (updateUrl !== false && bios[window.location.hash.replace('#', '')]) {
+        history.replaceState(null, '', '#team');
+      }
     }
 
     document.querySelectorAll('[data-person]').forEach(function (el) {
@@ -380,7 +436,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     bioModal.querySelectorAll('[data-modal-close]').forEach(function (el) {
-      el.addEventListener('click', closeBio);
+      el.addEventListener('click', function () { closeBio(); });
     });
 
     document.addEventListener('keydown', function (e) {
@@ -1279,9 +1335,25 @@ document.addEventListener('DOMContentLoaded', function () {
       var hashIsTab = Array.prototype.some.call(subtabBtns, function (btn) {
         return btn.getAttribute('data-subtab') === hashName;
       });
+      var hashIsBio = typeof bios !== 'undefined' && !!bios[hashName];
+
+      // Keep the bio popup in sync with the hash: if it's open but the URL
+      // no longer points to a person (footer link clicked, back/forward
+      // navigation, manual hash edit), close it here rather than leaving a
+      // stale popup on screen.
+      if (!hashIsBio && typeof bioModal !== 'undefined' && bioModal && !bioModal.hidden) {
+        closeBio(false);
+      }
 
       if (hashIsTab) {
         activateSubtab(hashName, scrollOnTabMatch);
+      } else if (hashIsBio) {
+        // Direct link to one person's bio (about.html#rogoff, etc.) —
+        // switch to the Our Team tab and open their popup automatically.
+        // Don't push a new history entry: the URL already reflects this
+        // state, whether from a page load or a same-page hash change.
+        activateSubtab('team', false);
+        if (typeof openBio === 'function') openBio(hashName, false);
       } else if (hashName) {
         // The hash may point to content nested inside one of the tab panels
         // (e.g. a topic id deep-linked from the homepage) rather than a tab
