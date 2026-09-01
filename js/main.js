@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function () {
         role: 'Chief of Staff to the Director',
         photo: 'images/valere-piarard.jpg',
         email: 'valerepierard@hks.harvard.edu',
-        bio: 'Valère Piérard is Chief of Staff to the Global Economics Lab’s Director. He supports Professor Gopinath’s work and oversees the Lab’s operations. Prior to joining the Lab, he worked at Lazard, where he advised governments and public entities on debt and financing matters. He holds graduate degrees from Harvard Kennedy School (MPA/ID) and Sciences Po Paris (MSc), and a bachelor’s degree from the Catholic University of Louvain in Belgium.',
+        bio: 'Valère Piérard is Chief of Staff to the Global Economics Lab’s Director. He supports Professor Gopinath’s work and oversees the Lab’s operations and projects. Prior to joining the Lab, he worked at Lazard, where he advised governments and public entities on debt and financing matters. He holds graduate degrees from Harvard Kennedy School (MPA/ID) and Sciences Po Paris (MSc), and a bachelor’s degree from the Catholic University of Louvain in Belgium.',
         links: [
           { label: 'LinkedIn', url: 'https://www.linkedin.com/in/valerepierard/' }
         ]
