@@ -223,6 +223,16 @@ document.addEventListener('DOMContentLoaded', function () {
           { label: 'X', url: 'https://x.com/krogoff?lang=fr' }
         ]
       },
+      straub: {
+        name: 'Ludwig Straub',
+        role: 'Professor of Economics, Harvard University',
+        photo: 'images/ludwig-straub.jpg',
+        email: 'ludwigstraub@g.harvard.edu',
+        bio: '<p>Ludwig Straub is a professor of economics at Harvard University. His research areas are macroeconomics and international economics. Among his topics of interest are the recent decline in the natural rate of interest, rising levels of private and public debt, and the transmission of monetary and fiscal policy. Ludwig also has an active research agenda solving and analyzing heterogeneous-agent models. Among his most recent papers is a 2025 paper studying the short-run effects of tariff shocks.</p><p>Ludwig is the recipient of the 2026 John Bates Clark Medal, a 2024 Sloan Fellowship, and the 2022 AQR Young Researcher Prize. He obtained his PhD in economics from the Massachusetts Institute of Technology, a master’s degree in mathematics from Trinity College in Cambridge, England, and a bachelor’s degree in physics from Ludwig Maximilians University of Munich.</p>',
+        links: [
+          { label: 'Personal website', url: 'https://straub.scholars.harvard.edu/' }
+        ]
+      },
       itskhoki: {
         name: 'Oleg Itskhoki',
         role: 'Slusky Family Professor of Economics, Harvard University',
@@ -247,6 +257,16 @@ document.addEventListener('DOMContentLoaded', function () {
         email: 'hrey@london.edu',
         bio: 'Hélène Rey is the Lord Bagri Professor of Economics at London Business School. Prior to joining LBS, she was a professor at Princeton University, in the Economics Department and the Woodrow Wilson School of Public and International Affairs. She was elected President of the European Economic Association in 2022. Her research focuses on international macroeconomics and finance, including the workings of the international monetary system, capital flows, and financial crises.'
       },
+      aguiar: {
+        name: 'Mark Aguiar',
+        role: 'Walker Professor of Economics and International Finance, Princeton University',
+        photo: 'images/mark-aguiar.jpg',
+        email: 'maguiar@princeton.edu',
+        bio: '<p>Mark Aguiar is the Walker Professor of Economics and International Finance at Princeton University.</p><p>Professor Aguiar received his Ph.D. in economics from MIT in 1999. He began his academic career at the University of Chicago’s Graduate School of Business before moving to the Federal Reserve Bank of Boston in 2004 and then to the University of Rochester in 2006. He moved to Princeton in 2011.</p><p>Professor Aguiar’s research addresses issues in open- and closed-economy macroeconomics. Professor Aguiar has studied emerging market business cycles, sovereign debt, the political economy of capital taxation, and growth. His work on sovereign debt spans self-fulfilling debt crises, equilibrium maturity choice, and the costs and consequences of sovereign borrowing — the subject of his 2023 IMF Mundell-Fleming Lecture and his co-authored book, The Economics of Sovereign Debt and Default (Princeton University Press). His recent research extends to Pareto-improving fiscal and monetary policies, the theory of capital gains taxation, international risk sharing, and the macroeconomic effects of trade wars. He has also investigated life-cycle consumption, time allocation, inequality, and trends in labor supply, including work on young men’s labor supply and hand-to-mouth consumption behavior.</p><p>Professor Aguiar is a research associate at the National Bureau of Economic Research and serves as co-director of the NBER’s program on International Finance and Macroeconomics (IFM). He is also co-director of the Griswold Center for Economic Policy Studies at Princeton. He was elected to the American Academy of Arts and Sciences in 2026. Professor Aguiar was co-editor of the American Economic Review. He has previously served on the board of editors for the American Economic Review, the Review of Economic Dynamics, and AEJ: Macroeconomics.</p>',
+        links: [
+          { label: 'Personal website', url: 'https://www.markaguiar.com/' }
+        ]
+      },
       antras: {
         name: 'Pol Antràs',
         role: 'Robert G. Ory Professor of Economics, Harvard University',
@@ -255,6 +275,16 @@ document.addEventListener('DOMContentLoaded', function () {
         bio: '<p>Pol Antràs is the Robert G. Ory Professor of Economics at Harvard University, where he has taught since 2003. He is also a Research Associate at the National Bureau of Economic Research (NBER), where he served as Director of the International Trade and Organization (ITO) Working Group. He is also a Research Affiliate at the Centre for Economic Policy Research (CEPR) and is a member of CESifo&rsquo;s Research Network.</p><p>He served as Editor of the Quarterly Journal of Economics from 2015 until 2020, having previously been on the editorial board of the American Economic Review, the Review of Economic Studies, the Journal of International Economics, and the Annual Review of Economics, among other journals. He is a member of the Scientific Council of the Barcelona School of Economics. Among other distinctions, he was awarded an Alfred P. Sloan Research Fellowship in 2007 and the Fundación Banco Herrero Prize in 2009, and he was elected Fellow of the Econometric Society in 2015, and Member of the American Academy of Arts and Sciences in 2024.</p><p>Antràs&rsquo; teaching and research fields are international economics and applied theory. His most recent work is focused on global value chains, on the interplay between globalization and interest rates, on globalization and market power, and on international relations.</p><p>A citizen of Spain, Antràs received his BA and MSc in Economics from Universitat Pompeu Fabra in Barcelona, and his PhD in Economics from the Massachusetts Institute of Technology in 2003.</p>',
         links: [
           { label: 'Personal website', url: 'https://antras.scholars.harvard.edu/' }
+        ]
+      },
+      chodorowreich: {
+        name: 'Gabriel Chodorow-Reich',
+        role: 'George Fisher Baker Professor of Economics, Harvard University',
+        photo: 'images/gabriel-chodorow-reich.jpg',
+        email: 'chodorowreich@fas.harvard.edu',
+        bio: '<p>Gabriel Chodorow-Reich is the George Fisher Baker Professor of Economics at Harvard University, a Research Associate at the National Bureau of Economic Research, a visiting scholar at the Federal Reserve Bank of Boston, and co-editor of American Economic Review: Insights. His research focuses on macroeconomics, finance, and labor markets. He has published articles in the leading economics and finance journals and his research has been covered by outlets including the Economist, the Financial Times, the New York Times, the Wall Street Journal, and the Washington Post. He has also been a contributor to the New York Times opinion page and is frequently quoted in national news stories covering the economy.</p><p>Gabriel received his A.B. in Social Studies from Harvard in 2005 and his Ph.D. from the University of California at Berkeley in 2013. From 2009-2010, he served as an economist on the White House Council of Economic Advisers. He is a 2020 recipient of a Sloan research fellowship.</p>',
+        links: [
+          { label: 'Personal website', url: 'https://chodorowreich.scholars.harvard.edu/' }
         ]
       },
       reinhart: {
@@ -291,6 +321,16 @@ document.addEventListener('DOMContentLoaded', function () {
         links: [
           { label: 'Personal website', url: 'https://sebnemkalemliozcan.com/' },
           { label: 'X', url: 'https://twitter.com/skalemliozcan' }
+        ]
+      },
+      melitz: {
+        name: 'Marc Melitz',
+        role: 'David A. Wells Professor of Political Economy, Harvard University',
+        photo: 'images/marc-melitz.jpg',
+        email: 'mmelitz@harvard.edu',
+        bio: '<p>Marc Melitz is the David A. Wells Professor of Political Economy at Harvard University. He holds a B.A. from Haverford College (1989), an M.S.B.A. from the Robert Smith School of Business (1992), and a Ph.D. from the University of Michigan (2000). He is a fellow of the Econometric Society and is affiliated with the National Bureau of Economic Research (NBER), the Centre for Economic Policy Research (CEPR), CESifo, and the Kiel Institute for the World Economy.</p><p>His broad research interests are in international trade and investment. More specifically, he studies producer-level responses to globalization and their implications for aggregate trade and investment patterns. His research has been funded by the Sloan Foundation and by the NSF.</p>',
+        links: [
+          { label: 'Personal website', url: 'https://melitz.scholars.harvard.edu/' }
         ]
       },
       neiman: {
