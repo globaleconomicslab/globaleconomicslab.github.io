@@ -301,6 +301,16 @@ document.addEventListener('DOMContentLoaded', function () {
         email: '',
         bio: 'Andrea F. Presbitero is Deputy Division Chief of the Multilateral Surveillance Division in the Research Department of the International Monetary Fund. He is also a CEPR Research Fellow in the International Macroeconomics and Finance programme, an Associate Fellow at SAIS Europe, and a member of Money &amp; Finance Research (MoFiR). He previously held faculty positions at Università Politecnica delle Marche and at the Johns Hopkins University School of Advanced International Studies. His research on financial intermediation, development finance, and international finance has been published in leading journals including the Review of Financial Studies, the Journal of Financial Economics, and the Review of Economics and Statistics. He serves as associate editor of the IMF Economic Review, Economía (LACEA), and the Journal of Financial Stability.'
       },
+      du: {
+        name: 'Wenxin Du',
+        role: 'Sylvan C. Coleman Professor of Financial Management, Harvard Business School',
+        photo: 'images/wenxin-du.jpg',
+        email: 'wdu@hbs.edu',
+        bio: '<p>Wenxin Du is the Sylvan C. Coleman Professor of Financial Management at Harvard Business School. Her research focuses on global currency and fixed income markets, central banking, financial regulation, and fintechs. She received the 2022 Award for Economics in Central Banking and was an Alfred P. Sloan Foundation Research Fellow from 2021 to 2023. Her work on deviations from covered interest rate parity has earned the AQR Insight Award Top Prize.</p><p>Before joining Harvard, Du was the Henry Kaufman Professor of Financial Institutions at Columbia Business School and Professor of Finance at the University of Chicago Booth School of Business. She has also served as a Financial Research Advisor at the Federal Reserve Bank of New York, Principal Economist at the Federal Reserve Board, and central bank research fellow at the Bank for International Settlements.</p><p>Du is a Research Associate at the National Bureau of Economic Research, where she co-leads the Market Frictions and Financial Risks initiative. She serves on the academic advisory committees of the Bank for International Settlements and the Federal Reserve Bank of Dallas.</p><p>She holds an A.M. and Ph.D. in Economics from Harvard University and a B.A. with Highest Honors in Economics and Mathematics from Swarthmore College.</p>',
+        links: [
+          { label: 'Personal website', url: 'https://sites.google.com/site/wenxindu/' }
+        ]
+      },
       gourinchas: {
         name: 'Pierre-Olivier Gourinchas',
         role: 'S.K. and Angela Chan Professor of Global Management, Department of Economics and Haas School of Business, UC Berkeley',
@@ -677,7 +687,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // surname alone, so "Kenneth Rogoff" doesn't get double-wrapped).
     function boldNames(text) {
       if (!text) return text;
-      return text.replace(/Gita Gopinath|Oleg Itskhoki|Kenneth Rogoff|Pol Antràs|Pierre-Olivier Gourinchas|Şebnem Kalemli-Özcan|Brent Neiman|Anton Korinek|Mark Aguiar|Ludwig Straub|Gabriel Chodorow-Reich|Marc Melitz|Gopinath|Itskhoki|Rogoff|Antràs|Gourinchas|Kalemli-Özcan|Kalemli-Ozcan|Neiman|Korinek|Aguiar|Straub|Chodorow-Reich|Melitz/g, function (m) {
+      return text.replace(/Gita Gopinath|Oleg Itskhoki|Kenneth Rogoff|Pol Antràs|Pierre-Olivier Gourinchas|Şebnem Kalemli-Özcan|Brent Neiman|Anton Korinek|Mark Aguiar|Ludwig Straub|Gabriel Chodorow-Reich|Marc Melitz|Wenxin Du|Gopinath|Itskhoki|Rogoff|Antràs|Gourinchas|Kalemli-Özcan|Kalemli-Ozcan|Neiman|Korinek|Aguiar|Straub|Chodorow-Reich|Melitz|Wenxin Du/g, function (m) {
         return '<strong>' + m + '</strong>';
       });
     }
