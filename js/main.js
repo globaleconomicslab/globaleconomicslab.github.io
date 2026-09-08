@@ -579,6 +579,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ],
         media: [
           { label: 'The Yuan Is More Than a Symptom of Global Imbalances', sub: 'Gopinath, Gourinchas & Rey, The Economist, August 2026', url: 'https://www.economist.com/by-invitation/2026/08/10/the-yuan-is-more-than-a-symptom-of-global-imbalances', linkLabel: 'Read the article' },
+          { label: 'Kevin Warsh’s Silence Speaks Volumes', sub: 'Chodorow-Reich, NY Times, August 7, 2026', url: 'https://www.nytimes.com/2026/08/07/opinion/kevin-warsh-federal-reserve-inflation.html', linkLabel: 'Read the article' },
           { label: 'The World’s Superpowers Are Scrambling for an Edge. It Makes All of Us Less Safe', sub: 'Gourinchas, NY Times, July 2026', url: 'https://www.nytimes.com/2026/07/10/opinion/trade-war-economy-globalization.html', linkLabel: 'Read the article' },
           { label: 'Global Imbalances: Old Questions, New Answers?', sub: 'Gourinchas, IMF Blog, April 2026', url: 'https://www.imf.org/en/blogs/articles/2026/04/06/global-imbalances-old-questions-new-answers', linkLabel: 'Read the article' },
           { label: 'Interdependence Bites Back', sub: 'Kalemli-Özcan, Project Syndicate, March 27, 2026', url: 'https://www.project-syndicate.org/onpoint/iran-war-tariffs-risk-turning-economic-interdependence-into-a-liability-by-sebnem-kalemli-ozcan-2026-03', linkLabel: 'Read the article' },
@@ -676,7 +677,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // surname alone, so "Kenneth Rogoff" doesn't get double-wrapped).
     function boldNames(text) {
       if (!text) return text;
-      return text.replace(/Gita Gopinath|Oleg Itskhoki|Kenneth Rogoff|Pol Antràs|Pierre-Olivier Gourinchas|Şebnem Kalemli-Özcan|Brent Neiman|Anton Korinek|Mark Aguiar|Ludwig Straub|Gopinath|Itskhoki|Rogoff|Antràs|Gourinchas|Kalemli-Özcan|Kalemli-Ozcan|Neiman|Korinek|Aguiar|Straub/g, function (m) {
+      return text.replace(/Gita Gopinath|Oleg Itskhoki|Kenneth Rogoff|Pol Antràs|Pierre-Olivier Gourinchas|Şebnem Kalemli-Özcan|Brent Neiman|Anton Korinek|Mark Aguiar|Ludwig Straub|Gabriel Chodorow-Reich|Marc Melitz|Gopinath|Itskhoki|Rogoff|Antràs|Gourinchas|Kalemli-Özcan|Kalemli-Ozcan|Neiman|Korinek|Aguiar|Straub|Chodorow-Reich|Melitz/g, function (m) {
         return '<strong>' + m + '</strong>';
       });
     }
