@@ -413,6 +413,13 @@ document.addEventListener('DOMContentLoaded', function () {
         email: 'mariannewang@college.harvard.edu',
         bio: ''
       },
+      arjun: {
+        name: 'Arjun Anand',
+        role: 'PhD Research Fellow',
+        photo: 'images/arjun-anand.jpg',
+        email: 'arjunanand@fas.harvard.edu',
+        bio: ''
+      },
       caroline: {
         name: 'Caroline Eisenberg',
         role: 'Executive Assistant',
@@ -536,13 +543,13 @@ document.addEventListener('DOMContentLoaded', function () {
         desc: 'Global trade and capital flows in an era of geoeconomic fragmentation.',
         image: 'images/topics/trade-finance.webp',
         papers: [
+          { label: 'The Remains of the Trade: The U.S.–China Trade War and Its Aftermath', sub: 'Antràs, Kulesza & Presbitero, September 2026', url: 'https://pantras-hash.github.io/remains_of_the_trade/paper/resettling_trade.pdf', dataUrl: 'https://pantras-hash.github.io/remains_of_the_trade/' },
           { label: 'Sanctions and the Exchange Rate', sub: 'Itskhoki & Mukhin, Review of Economic Studies, July 2026, 93(4): 2680–2714', url: 'https://itskhoki.com/papers/sanctionsER.pdf' },
           { label: 'Optimal Exchange Rate Policy', sub: 'Itskhoki & Mukhin, July 2026; also NBER Working Paper No. 31933, Dec 2023', url: 'https://itskhoki.com/papers/ERpolicy.pdf' },
           { label: 'Global Networks, Monetary Policy and Trade', sub: 'Kalemli-Özcan, Soylu & Yıldırım, May 2026', url: 'https://sebnemkalemliozcan.com/assets/workingpapers/GlobalNetwork_Monetary_Policy_and_Trade_latest.pdf' },
           { label: 'The Incidence of Tariffs: Rates and Reality', sub: 'Gopinath & Neiman, Journal of Economic Perspectives, May 2026, Vol. 40, No. 3, pp. 123-144', url: 'https://brentneiman.com/research/GN2.pdf' },
           { label: 'Global Imbalances: A Progress Report', sub: 'Itskhoki & Mukhin, in Paris Report 4: The New Global Imbalances, CEPR Press, Ch. 6, April 2026', url: 'https://cepr.org/chapters/global-imbalances-progress-report' },
           { label: 'Covered Interest Parity in Emerging Markets: Measurement and Drivers', sub: 'Dao & Gourinchas, Journal of International Economics, February 2026 (online)', url: 'https://berkeley.box.com/s/4b4qf5hnr625h8mix8z343iw2v11fybw' },
-          { label: 'The Remains of the Trade: The U.S.–China Trade War and Its Aftermath', sub: 'Antràs & Presbitero, February 2026', url: 'https://antras.scholars.harvard.edu/sites/g/files/omnuum5876/files/2026-03/PAAPAlUla_1.pdf', dataUrl: 'https://pantras-hash.github.io/remains_of_the_trade/#rankings' },
           { label: 'Industrial Policies for Multi-Stage Production: The Battle for Battery-Powered Vehicles', sub: 'Head, Mayer, Melitz & Yang, NBER Working Paper 34884, February 2026', url: 'https://www.nber.org/system/files/working_papers/w34884/w34884.pdf' },
           { label: 'Global Imbalances, Industrial Policy and Tariffs', sub: 'Gourinchas, Kindberg-Hanlon, Patnam, Rotunno & Rutta, Journal of Economic Perspectives, Summer 2026', url: 'https://berkeley.box.com/s/x8hl43abhwlojvrgelf2xmtp1qu1td2m' },
           { label: 'Financial Repression and the Currency Market Under Sanctions', sub: 'Itskhoki & Mukhin, Economic Policy, 2026, PEGI Conference Paper', url: 'https://itskhoki.com/papers/FinancialRepression.pdf' },
@@ -616,6 +623,7 @@ document.addEventListener('DOMContentLoaded', function () {
         desc: 'The macroeconomic effects of AI on the global economy.',
         image: 'images/topics/ai3.jpg',
         papers: [
+          { label: 'Economic Scenarios for Transformative AI', sub: 'Korinek, Jones, Sacher, Cotter & McCrory, The Anthropic Institute, Working Paper No. 2026-02, Sept. 2026', links: [ { label: 'Read the paper', url: 'https://www-cdn.anthropic.com/files/4zrzovbb/website/cf58f84d46a4a76bf5a5b039ac695fba6b80041c.pdf' }, { label: 'Explore the scenarios', url: 'https://www.anthropic.com/institute/econ-scenarios' } ] },
           { label: 'When Does Automating AI Research Produce Explosive Growth? Feedback Loops in Innovation Networks', sub: 'Davidson, Halperin, Houlden & Korinek, Jan. 2026', links: [ { label: 'Read the paper', url: 'https://basilhalperin.com/papers/singularities.pdf' } ] },
           { label: 'Public Finance in the Age of AI: A Primer', sub: 'Korinek & Lockwood, in NBER Volume on the Economics of Transformative AI, Jan. 2026', links: [ { label: 'Find the book', url: 'https://press.uchicago.edu/ucp/books/book/chicago/E/bo280995206.html' }, { label: 'Read the paper', url: 'https://www.brookings.edu/articles/public-finance-age-ai-primer/' }, { label: 'Blog', url: 'https://www.brookings.edu/articles/future-tax-policy-a-public-finance-framework-for-the-age-of-ai/' } ] },
           { label: 'AI Agents for Economic Research', sub: "Korinek, update of \"Generative AI for Economic Research,\" Journal of Economic Literature, Aug. 2025", links: [ { label: 'Read the paper', url: 'https://www.genaiforecon.org/JEL-2025-Aug-AIAgents.pdf' } ] },
@@ -945,7 +953,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (projectGrid && projectDotEls.length) {
     var projects = [
       { title: 'How to Address Global Imbalances?', subtitle: 'The G7 economists’ report proposed solutions that were core to the discussions of the G7 French Presidency in 2026.', href: 'g7-global-imbalances.html', img: 'images/global-network-g7.jpg', alt: 'Illustration of a connected global network over Earth' },
-      { title: 'Public Finance in the Age of AI', subtitle: '', href: 'public-finance-age-of-ai.html', img: 'images/topics/ai3.jpg', alt: 'Abstract illustration of an AI circuit brain', objectPosition: 'center 22%' },
+      { title: 'Economic Scenarios for Transformative AI', subtitle: '', href: 'public-finance-age-of-ai.html', img: 'images/topics/ai3.jpg', alt: 'Abstract illustration of an AI circuit brain', objectPosition: 'center 22%' },
       { title: 'Stablecoins and Anonymous Money', subtitle: '', href: 'stablecoins-anonymous-money.html', img: 'images/stablecoins-accent.jpg', alt: 'Abstract illustration representing stablecoins and digital currency' },
       { title: 'U.S.–China Trade War', subtitle: '', href: 'remains-of-the-trade.html', img: 'images/topics/trade-finance.webp', alt: 'Aerial view of cargo ship and cargo containers in harbor' },
       { title: 'Economic Policy Challenges for the Age of AI', subtitle: '', href: 'economic-policy-age-of-ai.html', img: 'images/topics/ai3.jpg', alt: 'Abstract illustration of an AI circuit brain', objectPosition: 'center 22%' }
