@@ -116,9 +116,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // "Stay informed" notify form (PAGE initiative box, Impact page) and the
-  // "Stay Updated" newsletter signup in the footer (every page) share one
-  // Formspree endpoint since they're both simple email-capture forms.
+  // "Stay informed" notify form (Program on AI and the Global Economy box,
+  // Impact page) and the "Stay Updated" newsletter signup in the footer
+  // (every page) share one Formspree endpoint since they're both simple
+  // email-capture forms.
   var pageNotifyForm = document.getElementById('page-notify-form');
   if (pageNotifyForm) {
     pageNotifyForm.addEventListener('submit', function (e) {
@@ -126,13 +127,13 @@ document.addEventListener('DOMContentLoaded', function () {
       var emailInput = pageNotifyForm.querySelector('input[type="email"]');
       var email = emailInput ? emailInput.value : '';
       var mailtoFallback = 'mailto:' + LAB_EMAIL
-        + '?subject=' + encodeURIComponent('Stay Informed — PAGE Initiative')
-        + '&body=' + encodeURIComponent('Please add this email to the PAGE updates list: ' + email);
+        + '?subject=' + encodeURIComponent('Stay Informed — Program on AI and the Global Economy')
+        + '&body=' + encodeURIComponent('Please add this email to the updates list: ' + email);
       submitToFormspree(
         pageNotifyForm,
         document.getElementById('page-notify-form-status'),
         mailtoFallback,
-        'Thanks — you’re on the list. We’ll be in touch when PAGE launches.'
+        'Thanks — you’re on the list. We’ll be in touch when the program launches.'
       );
     });
   }
@@ -640,6 +641,7 @@ document.addEventListener('DOMContentLoaded', function () {
           { label: 'Artificial Intelligence and Its Implications for Income Distribution and Unemployment', sub: 'Korinek & Stiglitz, in Ajay Agrawal, Joshua Gans & Avi Goldfarb (eds.), The Economics of Artificial Intelligence, pp. 349-390, NBER and University of Chicago Press, May 2019', links: [ { label: 'Read the chapter', url: 'https://drive.google.com/file/d/1HneWSeHoiPVYAZ7846T5uSlfHf4_EAdk/view?usp=sharing' }, { label: 'Presentation', url: 'https://www.youtube.com/watch?v=1tGHMhyte94&list=PLuCLRVi6Lc6cCzu7nwxUqKwJMykfFklZ3&index=17' } ] }
         ],
         speeches: [
+          { label: 'The Future of the Global Economy and Your Place in It', sub: 'Gopinath, Bocconi University Opening Ceremony, Academic Year 2026–27, September 2026', url: 'https://www.unibocconi.it/sites/default/files/media/attachments/Speech%20Gopinath%202026-2027.pdf?VersionId=ZmAZSbsai5FxuB0zJligBS.Co6URb0T4', linkLabel: 'Read the speech' },
           { label: 'Crisis Amplifier? How to Prevent AI from Worsening the Next Economic Downturn', sub: 'Gopinath, IMF, May 2024', url: 'https://www.imf.org/en/News/Articles/2024/05/30/sp053024-crisis-amplifier-how-to-prevent-ai-from-worsening-the-next-economic-downturn', linkLabel: 'Read the speech' },
           { label: 'The Power and Perils of the "Artificial Hand": Considering AI Through the Ideas of Adam Smith', sub: 'Gopinath, IMF, June 2023', url: 'https://www.imf.org/en/News/Articles/2023/06/05/sp060523-fdmd-ai-adamsmith', linkLabel: 'Read the speech' }
         ],
