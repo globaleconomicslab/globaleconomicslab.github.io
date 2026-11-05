@@ -224,6 +224,16 @@ document.addEventListener('DOMContentLoaded', function () {
           { label: 'X', url: 'https://x.com/krogoff?lang=fr' }
         ]
       },
+      stein: {
+        name: 'Jeremy C. Stein',
+        role: 'Moise Y. Safra Professor of Economics, Harvard University',
+        photo: 'images/jeremy-stein.jpg',
+        email: 'jeremy_stein@harvard.edu',
+        bio: '<p>Jeremy C. Stein is the Moise Y. Safra Professor of Economics at Harvard University. From May 2012 to May 2014, he was a member of the Board of Governors of the Federal Reserve System. Before coming to Harvard in 2000, Stein was on the finance faculty of M.I.T.’s Sloan School of Management for ten years, most recently as the J.C. Penney Professor of Management. Prior to that, he was an assistant professor of finance at the Harvard Business School from 1987-1990. He received his AB in economics summa cum laude from Princeton University in 1983 and his PhD in economics from M.I.T. in 1986.</p><p>Stein’s research has covered such topics as: behavioral finance and market efficiency; corporate investment and financing decisions; risk management; capital allocation inside firms; banking; financial regulation; and monetary policy.</p><p>Stein is a fellow of the American Academy of Arts and Sciences, a research associate at the National Bureau of Economic Research, a member of the Bellagio Group, and a past member of the Federal Reserve Bank of New York’s Financial Advisory Roundtable. In 2008, he was president of the American Finance Association. In 2009, he served as a senior advisor to the Treasury Secretary and on the staff of the National Economic Council. From 2018 to 2021, he was chair of Harvard’s economics department, and from 2015 to 2024 he was on the board of directors of the Harvard Management Company.</p>',
+        links: [
+          { label: 'Personal website', url: 'https://stein.scholars.harvard.edu/' }
+        ]
+      },
       straub: {
         name: 'Ludwig Straub',
         role: 'Professor of Economics, Harvard University',
@@ -709,7 +719,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // surname alone, so "Kenneth Rogoff" doesn't get double-wrapped).
     function boldNames(text) {
       if (!text) return text;
-      return text.replace(/Gita Gopinath|Oleg Itskhoki|Kenneth Rogoff|Pol Antràs|Pierre-Olivier Gourinchas|Şebnem Kalemli-Özcan|Brent Neiman|Anton Korinek|Mark Aguiar|Ludwig Straub|Gabriel Chodorow-Reich|Marc Melitz|Wenxin Du|Gopinath|Itskhoki|Rogoff|Antràs|Gourinchas|Kalemli-Özcan|Kalemli-Ozcan|Neiman|Korinek|Aguiar|Straub|Chodorow-Reich|Melitz|Wenxin Du/g, function (m) {
+      return text.replace(/Gita Gopinath|Oleg Itskhoki|Kenneth Rogoff|Pol Antràs|Pierre-Olivier Gourinchas|Şebnem Kalemli-Özcan|Brent Neiman|Anton Korinek|Mark Aguiar|Ludwig Straub|Gabriel Chodorow-Reich|Marc Melitz|Jeremy C\. Stein|Jeremy Stein|Wenxin Du|(?<![A-Za-z])Stein(?![A-Za-z])|Gopinath|Itskhoki|Rogoff|Antràs|Gourinchas|Kalemli-Özcan|Kalemli-Ozcan|Neiman|Korinek|Aguiar|Straub|Chodorow-Reich|Melitz|Wenxin Du/g, function (m) {
         return '<strong>' + m + '</strong>';
       });
     }
