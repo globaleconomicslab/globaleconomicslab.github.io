@@ -213,6 +213,16 @@ document.addEventListener('DOMContentLoaded', function () {
           { label: 'LinkedIn', url: 'https://www.linkedin.com/in/valerepierard/' }
         ]
       },
+      reis: {
+        name: 'Ricardo Reis',
+        role: 'A.W. Phillips Professor of Economics, London School of Economics',
+        photo: 'images/ricardo-reis.jpg',
+        email: 'r.a.reis@lse.ac.uk',
+        bio: '<p>Ricardo Reis is the A.W. Phillips Professor of Economics at the London School of Economics. He is an elected Fellow of the British Academy, the Academia de Ciências de Lisboa, and the Econometric Society, and is a past winner of the Yrjö Jahnsson medal, the Carl Menger award, the Bernácer prize, and the BdF/TSE junior prize. Professor Reis is an academic consultant at the Bank of England, the European Stability Mechanism, and the Federal Reserve Bank of Richmond, and he serves on the council or as an advisor of multiple organizations. He has published widely on macroeconomics, including both monetary and fiscal policy, inflation and business cycles, and finance in the international monetary system. Professor Reis received his PhD from Harvard University, and was previously on the faculty at Columbia University and Princeton University.</p>',
+        links: [
+          { label: 'Personal website', url: 'https://www.r2rsquared.com/' }
+        ]
+      },
       rogoff: {
         name: 'Kenneth Rogoff',
         role: 'Maurits C. Boas Professor of International Economics, Harvard University',
@@ -222,6 +232,16 @@ document.addEventListener('DOMContentLoaded', function () {
         links: [
           { label: 'Personal website', url: 'https://rogoff.scholars.harvard.edu/' },
           { label: 'X', url: 'https://x.com/krogoff?lang=fr' }
+        ]
+      },
+      simonovska: {
+        name: 'Ina Simonovska',
+        role: 'Associate Professor of Economics, UC Davis',
+        photo: 'images/ina-simonovska.jpg',
+        email: 'inasimonovska@ucdavis.edu',
+        bio: '<p>Ina Simonovska is an associate professor at the Department of Economics at UC Davis, a member of the California Governor’s Council of Economic Advisors and a non-resident senior associate at the Center for Strategic and International Studies in Washington, D.C. Professor Simonovska is affiliated with research institutions including the U.S.-based National Bureau of Economic Research, the European Centre for Economic Policy Research, and the German CESifo Institute.</p>',
+        links: [
+          { label: 'Personal website', url: 'https://www.inasimonovska.com/' }
         ]
       },
       stein: {
@@ -560,6 +580,7 @@ document.addEventListener('DOMContentLoaded', function () {
           { label: 'Global Networks, Monetary Policy and Trade', sub: 'Kalemli-Özcan, Soylu & Yıldırım, May 2026', url: 'https://sebnemkalemliozcan.com/assets/workingpapers/GlobalNetwork_Monetary_Policy_and_Trade_latest.pdf' },
           { label: 'The Incidence of Tariffs: Rates and Reality', sub: 'Gopinath & Neiman, Journal of Economic Perspectives, May 2026, Vol. 40, No. 3, pp. 123-144', url: 'https://brentneiman.com/research/GN2.pdf' },
           { label: 'Global Imbalances: A Progress Report', sub: 'Itskhoki & Mukhin, in Paris Report 4: The New Global Imbalances, CEPR Press, Ch. 6, April 2026', url: 'https://cepr.org/chapters/global-imbalances-progress-report' },
+          { label: 'Safeguarding the Treasury Market', sub: 'Kashyap & Stein, IMF Finance & Development Magazine, March 2026', links: [ { label: 'Read the piece', url: 'https://stein.scholars.harvard.edu/publication/safeguarding-treasury-market-0' } ] },
           { label: 'Covered Interest Parity in Emerging Markets: Measurement and Drivers', sub: 'Dao & Gourinchas, Journal of International Economics, February 2026 (online)', url: 'https://berkeley.box.com/s/4b4qf5hnr625h8mix8z343iw2v11fybw' },
           { label: 'Industrial Policies for Multi-Stage Production: The Battle for Battery-Powered Vehicles', sub: 'Head, Mayer, Melitz & Yang, NBER Working Paper 34884, February 2026', url: 'https://www.nber.org/system/files/working_papers/w34884/w34884.pdf' },
           { label: 'Global Imbalances, Industrial Policy and Tariffs', sub: 'Gourinchas, Kindberg-Hanlon, Patnam, Rotunno & Rutta, Journal of Economic Perspectives, Summer 2026', url: 'https://berkeley.box.com/s/x8hl43abhwlojvrgelf2xmtp1qu1td2m' },
@@ -570,6 +591,7 @@ document.addEventListener('DOMContentLoaded', function () {
           { label: 'Opposing Firm-Level Responses to the China Shock: Output Competition versus Input Supply', sub: 'Aghion, Bergeaud, Lequien, Melitz & Zuber, American Economic Journal: Economic Policy, forthcoming', url: 'https://melitz.scholars.harvard.edu/sites/g/files/omnuum5906/files/melitz/files/aej_manuscript_ablmz_replicated.pdf' },
           { label: 'Upgrading the Global Financial Safety Net: Implications of a Synthetic Reserve Deposit', sub: "Dell'Ariccia, Farahmand, Gourinchas, Mak, Peralta-Alva & Roldán, IMF Working Paper 135, 2026", url: 'https://doi.org/10.5089/9798229051378.001' },
           { label: 'Stock Market Wealth and Entrepreneurship', sub: 'Chodorow-Reich, Nenov, Santos & Simsek, 2026', url: 'https://chodorowreich.scholars.harvard.edu/sites/g/files/omnuum7686/files/2026-04/StockMarketEntrepreneurship_2.pdf' },
+          { label: 'Central Banks As Dollar Lenders of Last Resort: Implications for Regulation and Reserve Holdings', sub: 'Das, Gopinath, Hall, Kim & Stein, American Economic Journal: Macroeconomics, 18(3): 1–41, 2026', url: 'https://stein.scholars.harvard.edu/publication/central-banks-dollar-lenders-last-resort-implications-regulation-and-reserve-holdings' },
           { label: 'How Good is International Risk Sharing?', sub: 'Aguiar, Itskhoki & Mukhin, December 2025', url: 'https://www.markaguiar.com/files/IRS_draft.pdf' },
           { label: 'The Macroeconomics of Tariff Shocks', sub: 'Straub, Auclert & Rognlie, December 2025', url: 'https://shade-econ.github.io/tariff_shocks.pdf?v=1' },
           { label: 'The Global (Mis)Allocation of Capital', sub: 'Bertaut, Curcuru, Faia & Gourinchas, December 2025', url: 'https://berkeley.box.com/s/dlz175qp96q70eooyeyaoxi5lvqvw75l' },
@@ -580,6 +602,7 @@ document.addEventListener('DOMContentLoaded', function () {
           { label: 'The Saving Glut of the Rich', sub: 'Straub, Mian & Sufi, July 2025', url: 'https://straub.scholars.harvard.edu/sites/g/files/omnuum7751/files/2025-07/MSS_SGR_July242025.pdf' },
           { label: 'The Optimal Macro Tariff', sub: 'Itskhoki & Mukhin, 2026; also NBER Working Paper No. 33839, May 2025', url: 'https://itskhoki.com/papers/OptimalMacroTariff.pdf' },
           { label: 'Tariff Wars and Net Foreign Assets', sub: 'Aguiar, Amador & Fitzgerald, April 2025', url: 'https://www.markaguiar.com/files/tariff_deficits.pdf' },
+          { label: 'Treasury Market Dysfunction and the Role of the Central Bank', sub: 'Kashyap, Stein, Wallen & Younger, Brookings Papers on Economic Activity, Spring 2025: 221–296', url: 'https://stein.scholars.harvard.edu/publication/treasury-market-dysfunction-and-role-central-bank' },
           { label: 'Mussa Puzzle Redux', sub: 'Itskhoki & Mukhin, Econometrica, January 2025, 93(1): 1–39', url: 'https://itskhoki.com/papers/Mussa.pdf' },
           { label: 'Changing Global Linkages: A New Cold War?', sub: 'Gopinath, Gourinchas, Presbitero & Topalova, JIE 2025', url: 'https://www.sciencedirect.com/science/article/abs/pii/S0022199624001697' },
           { label: 'The Uncharted Waters of International Trade', sub: 'Antràs, Journal of the European Economic Association, 2025', url: 'https://antras.scholars.harvard.edu/sites/g/files/omnuum5876/files/2025-02/Uncharted_JEEA.pdf' },
@@ -588,6 +611,7 @@ document.addEventListener('DOMContentLoaded', function () {
           { label: 'Micro Risks and (Robust) Pareto Improving Policies', sub: 'Aguiar, Amador & Arellano, American Economic Review, 114(11): 3669–3713, 2024', url: 'https://www.markaguiar.com/files/R_less_than_1_in_Aiyagari.pdf' },
           { label: 'The Economics of Sanctions: From Theory into Practice', sub: 'Itskhoki & Ribakova, Brookings Papers on Economic Activity, Fall 2024: 425–470', url: 'https://www.brookings.edu/wp-content/uploads/2024/09/17160-BPEA-BPEA-FA24_WEB_Istkhoki-Ribakova.pdf' },
           { label: 'Changing Central Bank Pressures and Inflation', sub: 'Afrouzi, Halac, Rogoff & Yared, Brookings Papers on Economic Activity, Spring 2024, pp. 205-241', url: 'https://www.brookings.edu/wp-content/uploads/2024/11/16937-BPEA-BPEA-SP24_WEB-Afrouzi-et-al.pdf' },
+          { label: 'The Evolution of Banking in the 21st Century: Evidence and Regulatory Implications', sub: 'Hanson, Ivashina, Nicolae, Stein, Sunderam & Tarullo, Brookings Papers on Economic Activity, Spring 2024: 343–389', url: 'https://stein.scholars.harvard.edu/publications/evolution-banking-21st-century-evidence-and-regulatory-implications' },
           { label: 'Corporate Debt Structure with Home and International Currency Bias', sub: 'Maggiori, Neiman & Schreger, IMF Economic Review, 2024, p.1-24', url: 'https://brentneiman.com/research/MNS_IMFER.pdf' },
           { label: "Interest Rates and World Trade: An 'Austrian' Perspective", sub: 'Antràs, AEA Papers and Proceedings, May 2023', url: 'https://antras.scholars.harvard.edu/sites/g/files/omnuum5876/files/antras/files/antras-2023-interest-rates-and-world-trade-an-austrian-perspective.pdf' },
           { label: 'Globalization and Pandemics', sub: 'Antràs, Redding & Rossi-Hansberg, American Economic Review, 2023', url: 'https://antras.scholars.harvard.edu/sites/g/files/omnuum5876/files/antras/files/antras-et-al-2023-globalization-and-pandemics.pdf' },
@@ -621,6 +645,7 @@ document.addEventListener('DOMContentLoaded', function () {
           { label: 'Trade and Financial Policy for National Security and Supply Chain Resiliency', sub: 'Neiman, Hoover Institution panel with H.R. McMaster and Condoleezza Rice, February 20, 2026', url: 'https://www.youtube.com/watch?v=EctVr5rCJ_w', linkLabel: 'Watch the video' },
           { label: 'Tariffs are Worse Than You Think', sub: 'Kalemli-Özcan, Project Syndicate, January 26, 2026', url: 'https://www.project-syndicate.org/commentary/tariffs-costs-and-damage-to-economy-greater-than-many-understand-by-sebnem-kalemli-ozcan-2026-01', linkLabel: 'Read the article' },
           { label: 'Tariffs, Global Imbalances, and the Dollar', sub: 'Itskhoki & Mukhin, VoxEU (CEPR), Nov 2025', url: 'https://cepr.org/voxeu/columns/tariffs-global-imbalances-and-dollar', linkLabel: 'Read the article' },
+          { label: 'The bond market’s problems aren’t all to do with Donald Trump: Dysfunction lies at the heart of the Treasury market', sub: 'Kashyap & Stein, The Economist, April 11, 2025', url: 'https://stein.scholars.harvard.edu/sites/g/files/omnuum5951/files/2025-04/By%20InvitationKS%20(002).pdf', linkLabel: 'Read the article' },
           { label: 'The Trump White House Cited My Research To Justify Tariffs. It Got It All Wrong', sub: 'Neiman, NY Times, April 2025', url: 'https://www.nytimes.com/2025/04/07/opinion/trump-tariff-math-formula.html', linkLabel: 'Read the article' },
           { label: 'Sanctions and the Exchange Rate', sub: 'Mukhin & Itskhoki, VoxEU (CEPR), May 2022', url: 'https://cepr.org/voxeu/columns/sanctions-and-exchange-rate', linkLabel: 'Read the article' },
           { label: 'The Mussa Puzzle and the Optimal Exchange Rate Policy', sub: 'Itskhoki & Mukhin, VoxEU (CEPR), Jan 2022', url: 'https://cepr.org/voxeu/columns/mussa-puzzle-and-optimal-exchange-rate-policy', linkLabel: 'Read the article' }
@@ -719,7 +744,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // surname alone, so "Kenneth Rogoff" doesn't get double-wrapped).
     function boldNames(text) {
       if (!text) return text;
-      return text.replace(/Gita Gopinath|Oleg Itskhoki|Kenneth Rogoff|Pol Antràs|Pierre-Olivier Gourinchas|Şebnem Kalemli-Özcan|Brent Neiman|Anton Korinek|Mark Aguiar|Ludwig Straub|Gabriel Chodorow-Reich|Marc Melitz|Jeremy C\. Stein|Jeremy Stein|Wenxin Du|(?<![A-Za-z])Stein(?![A-Za-z])|Gopinath|Itskhoki|Rogoff|Antràs|Gourinchas|Kalemli-Özcan|Kalemli-Ozcan|Neiman|Korinek|Aguiar|Straub|Chodorow-Reich|Melitz|Wenxin Du/g, function (m) {
+      return text.replace(/Gita Gopinath|Oleg Itskhoki|Kenneth Rogoff|Pol Antràs|Pierre-Olivier Gourinchas|Şebnem Kalemli-Özcan|Brent Neiman|Anton Korinek|Mark Aguiar|Ludwig Straub|Gabriel Chodorow-Reich|Marc Melitz|Jeremy C\. Stein|Jeremy Stein|Ricardo Reis|(?<![A-Za-z])Reis(?![A-Za-z])|Ina Simonovska|Simonovska|Wenxin Du|(?<![A-Za-z])Stein(?![A-Za-z])|Gopinath|Itskhoki|Rogoff|Antràs|Gourinchas|Kalemli-Özcan|Kalemli-Ozcan|Neiman|Korinek|Aguiar|Straub|Chodorow-Reich|Melitz|Wenxin Du/g, function (m) {
         return '<strong>' + m + '</strong>';
       });
     }
